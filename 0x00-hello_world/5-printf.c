@@ -1,8 +1,8 @@
 # include <stdio.h>
 /**
- * main entry point
- * dipllay output using printf
- * return 0 if succes
+ * main - Entry point
+ * display output using printf func
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
