@@ -1,5 +1,12 @@
 # include <stdio.h>
-/*main function*/
+/**
+ * main - Entry point
+ * 
+ * Description: 'programm that print a string'
+ * @parameter: describe the parameter
+ * 
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	/*funtcion puts that print*/
