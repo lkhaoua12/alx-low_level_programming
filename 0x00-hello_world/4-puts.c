@@ -1,5 +1,5 @@
 # include <stdio.h>
-
+/*main function*/
 int main(void)
 {
 	/*funtcion puts that print*/
