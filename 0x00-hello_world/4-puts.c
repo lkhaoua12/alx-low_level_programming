@@ -3,7 +3,7 @@
  * main - Entry point
  *
  * Description: 'programm that print a string'
- * @parameter: describe the parameter
+ * @parameter: a string of text
  *
  * Return: Always 0 (Success)
  */
