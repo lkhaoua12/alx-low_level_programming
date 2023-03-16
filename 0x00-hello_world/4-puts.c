@@ -3,8 +3,6 @@
  * main - Entry point
  *
  * Description: 'programm that print a string'
- * @parameter: a string of text
- *
  * Return: Always 0 (Success)
  */
 int main(void)
