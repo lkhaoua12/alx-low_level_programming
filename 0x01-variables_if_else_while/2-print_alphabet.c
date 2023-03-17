@@ -7,12 +7,12 @@
 
 int main()
 {
-	int alph;
+	char c;
 
-	alph = 'a';
-	for( alph; alph != 'z'; alph++ )
+	c = 'a';
+	for( c; c != 'z'; c++ )
 	{
-	putchar(alph);
+	putchar(c);
 	}
 	putchar("\n");
 	return 0;
