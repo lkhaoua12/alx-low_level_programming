@@ -1,20 +1,17 @@
+#include <stdio.h>
 /**
-* main - Entry point
-*
-* Return: Always 0 (success)
-*
-*/
-
+ *main - print numbers of base 10 starting from 0
+ *
+ *Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int n = 0;
+	int c;
 
-	for (n = 0; n < 10 ; n++)
+	for (c = 0; c < 10; c++)
 	{
-	putchar((n % 10) + '0');
+		putchar((c % 10) + '0');
 	}
 	putchar('\n');
 	return (0);
-
-
 }
