@@ -5,5 +5,6 @@
  */
 int main(void)
 {
-    return (0);
+	printf("assembly using intel");
+	return (0);
 }
