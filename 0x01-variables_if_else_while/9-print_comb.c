@@ -20,5 +20,6 @@ int main(void)
 	putchar(' ');
 	}
 	putchar('9');
+	return (0);
 
 }
