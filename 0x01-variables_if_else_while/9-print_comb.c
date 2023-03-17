@@ -3,11 +3,6 @@
  *
  * Return: Always 0 (success)
  */
-/**
- * main - Entry point
- *
- * Return: Always 0 (success)
- */
 #include <stdio.h>
 
 int main(void)
@@ -21,6 +16,6 @@ int main(void)
 	putchar(' ');
 	}
 	putchar('9');
-	return (0);
+	return ('\n');
 
 }
