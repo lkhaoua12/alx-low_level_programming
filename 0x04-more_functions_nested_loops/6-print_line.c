@@ -12,9 +12,8 @@ void print_line(int n)
 	for (lenght = 1; lenght <= n; lenght++)
 	{	
 		if (n == 0)
-		break;
+			break;
 		_putchar(95);
 	}
 	_putchar('\n');
-
 }
