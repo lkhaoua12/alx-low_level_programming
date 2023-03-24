@@ -2,7 +2,7 @@
 
 /**
  * main - check the code
- *
+ * print more numbers
  * Return: Always 0.
  */
 
