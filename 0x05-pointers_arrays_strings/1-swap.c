@@ -1,9 +1,11 @@
 #include "main.h"
-
 /**
- * sawap_int - int - sapiwn value of two pointers.
- * @ takkes two pointers.
- * return: void.
+ * swap_int - Entry point
+ * 
+ * Description: 'the program's description'
+ * @parameter: describe the parameter
+ * 
+ * Return: void.
  */
 
 void swap_int(int *a, int *b)
