@@ -1,4 +1,5 @@
-#include "main.h" 
+#include "main.h"
+#include <string.h> 
 /**
  * main - Entry point
  * 
@@ -10,10 +11,10 @@
 
 int _strlen(char *s)
 {
-	int i;
+	char * i;
 	int c = 0;
 
-	for (i = 0; i < *s; i++)
+	for (i = s; *i != '\0' ; i++)
 	{
 		c++;
 	}
