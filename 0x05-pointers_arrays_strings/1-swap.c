@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- *sawap int - sapiwn value of two pointers.
- *@ takkes two pointers.
+ * sawap_int - int - sapiwn value of two pointers.
+ * @ takkes two pointers.
  * return: void.
  */
 
