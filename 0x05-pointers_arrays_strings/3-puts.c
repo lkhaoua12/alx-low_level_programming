@@ -1,5 +1,4 @@
-#include "main.h"
-#include <string.h> 
+#include "main.h" 
 /**
  * main - Entry point
  * 
@@ -9,14 +8,13 @@
  * Return: Always 0 (Success)
  */
 
-int _strlen(char *s)
+void _puts(char *str)
 {
-	char *i;
-	int c = 0;
+	char *rt;
 
-	for (i = s; *i != '\0' ; i++)
+	for (rt = str; *rt != '\0'; rt++)
 	{
-		c++;
+		putchar(*rt);
 	}
-	return (c); 
+	putchar('\n');
 }
