@@ -1,4 +1,4 @@
-#include "main.h" 
+#include "main.h"
 
 /**
  *sawap int - sapiwn value of two pointers.
