@@ -2,7 +2,7 @@
 /**
  * swap_int - Entry point
  * 
- * @*a: describe the parameter
+ * @a: describe the parameter
  * 
  * Return: void.
  */
