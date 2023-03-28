@@ -10,8 +10,10 @@
 
 void print_rev(char *s)
 {
+
+	char *i;
 	int c = 0;
-	while(s[c] != '\0')
+	for (i = s; *i != '\0' ; i++)
 	{
 		c++;
 	}
