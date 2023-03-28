@@ -1,20 +1,16 @@
-#include "main.h" 
-/**
- * main - Entry point
- * 
- * Description: 'the program's description'
- * @parameter: describe the parameter
- * 
- * Return: Always 0 (Success)
- */
+#include "main.h"
 
+/**
+ * _puts - prints a string to stdout
+ * @str: pointer to the string to print
+ */
 void _puts(char *str)
 {
-	char *rt;
+	int i;
 
-	for (rt = str; *rt != '\0'; rt++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		putchar(*rt);
+		_putchar(str[i]);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
