@@ -1,20 +1,25 @@
 #include "main.h"
-/**
- * main - Entry point
- * 
- * Description: 'the program's description'
- * @parameter: describe the parameter
- * 
- * Return: Always 0 (Success)
- */
 
+/**
+ * puts2 - prints one char out of 2 of a string
+ * followed by a new line
+ * @str: string to print the chars from
+ */
 void puts2(char *str)
 {
-	int i;
-	for (i = 0; str[i] != '\0'; i++)
+	int len, i;
+
+	len = 0;
+
+	while (str[len] != '\0')
 	{
-		if (i % 2 == 0)
+		len++;
+	}
+
+	for (i = 0; i < len; i += 2)
+	{
 		_putchar(str[i]);
 	}
+
 	_putchar('\n');
 }
