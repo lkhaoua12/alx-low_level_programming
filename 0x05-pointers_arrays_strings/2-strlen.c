@@ -1,22 +1,21 @@
 #include "main.h"
-#include <string.h> 
-/**
- * main - Entry point
- * 
- * Description: 'the program's description'
- * @parameter: describe the parameter
- * 
- * Return: Always 0 (Success)
- */
 
+/**
+ * _strlen - returns the length of a string
+ * @s: string to evaluate.
+ *
+ * Return: the length of the string
+ */
 int _strlen(char *s)
 {
-	char *i;
-	int c = 0;
+	int i;
 
-	for (i = s; *i != '\0' ; i++)
+	i = 0;
+
+	while (s[i] != '\0')
 	{
-		c++;
+		i++;
 	}
-	return (c); 
+
+	return (i);
 }
