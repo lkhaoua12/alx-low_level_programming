@@ -1,25 +1,26 @@
-#include "main.h" 
-/**
- * main - Entry point
- * 
- * Description: 'the program's description'
- * @parameter: describe the parameter
- * 
- * Return: Always 0 (Success)
- */
+#include "main.h"
 
+/**
+ * print_rev - prints a string in reverse, followed by a new line
+ * @s: string to be printed
+ */
 void print_rev(char *s)
 {
-	int i = 0;
+	int i, j, len;
 
-	while (s[i])
+	i = 0;
+
+	while (s[i] != '\0')
 	{
 		i++;
 	}
 
-	while (i--)
+	len = i;
+
+	for (j = len - 1; j >= 0; j--)
 	{
-		putchar(s[i]);
+		_putchar(s[j]);
 	}
-	putchar('\n');
+
+	_putchar('\n');
 }
