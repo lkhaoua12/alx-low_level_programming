@@ -14,6 +14,8 @@ void puts_half(char *str)
 {
 	int lenght = strlen(str);
 	int middle = lenght / 2;
+	if middle % 2 == 0;
+	middle += 1;
 
 	int i;
 	for (i = middle; str[i] != '\0'; i++)
