@@ -4,13 +4,10 @@
  * @a: the array to print
  * @n: number of element in array
  */
-
-
-
 void print_array(int *a, int n)
 {
 	int i;
-	
+
 	if (n <= 0)
 	;
 	else
@@ -20,7 +17,6 @@ void print_array(int *a, int n)
 			printf("%d, ", a[i]);
 		}
 		printf("%d", a[n - 1]);
-		
 	}
 	printf("\n");
 }
