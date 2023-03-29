@@ -1,11 +1,8 @@
 #include "main.h"
 /**
- * main - Entry point
- * 
- * Description: 'the program's description'
- * @parameter: describe the parameter
- * 
- * Return: Always 0 (Success)
+ * print_array - print an array
+ * @a: the array to print
+ * @n: number of element in array
  */
 
 
@@ -26,5 +23,4 @@ void print_array(int *a, int n)
 		
 	}
 	printf("\n");
-
 }
