@@ -1,7 +1,7 @@
 /**
- * _reverse_array - concat two strings
+ * _reverse_array - reverse an array
  * @a: array to reverse
- * @n:lenght of array second string
+ * @n: lenght of array second string
  */
 void reverse_array(int *a, int n)
 {
