@@ -5,13 +5,13 @@
  */
 void reverse_array(int *a, int n)
 {
-	int i;
+	int i, j;
 	char tmp;
 	
-	for (i = 0, n = n - 1; i < n; i++, n--)
+	for (i = 0, j = (n - 1); i < j; i++, j--)
 	{
 		tmp = a[i];
-		a[i] = a[n];
-		a[n] = tmp;
+		a[i] = a[j];
+		a[j] = tmp;
 	}
 }
