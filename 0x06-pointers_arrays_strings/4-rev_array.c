@@ -1,5 +1,5 @@
 /**
- * _strcat - concat two strings
+ * _reverse_array - concat two strings
  * @a: array to reverse
  * @n:lenght of array second string
  */
@@ -7,12 +7,11 @@ void reverse_array(int *a, int n)
 {
 	int i;
 	char tmp;
-	n = n - 1;
-	for (i = 0; i < n / 2; i++)
+	
+	for (i = 0, n = n - 1; i < n; i++, n--)
 	{
 		tmp = a[i];
 		a[i] = a[n];
 		a[n] = tmp;
-		n--;
 	}
 }
