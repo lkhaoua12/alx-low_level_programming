@@ -5,7 +5,7 @@
  * @n: number of char to concat
  * Return: dest
  */
-*_strncat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int lenght = 0;
 	int c2, i;
@@ -14,7 +14,7 @@
 	{
 		lenght++;
 	}
-	for (c2 = 0; src[c2] != '/0' && c2 < n; c2++)
+	for (c2 = 0; src[c2] != '\0' && c2 < n; c2++)
 	{
 		dest[lenght] = src[c2];
 		lenght++;
