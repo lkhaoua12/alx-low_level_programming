@@ -30,9 +30,7 @@ char *cap_string(char *n)
 		    n[index - 1] == '}' ||
 		    index == 0)
 			n[index] -= 32;
-
 		index++;
 	}
-
 	return (n);
 }
