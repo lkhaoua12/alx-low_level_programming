@@ -14,7 +14,7 @@
 	{
 		lenght++;
 	}
-	for (c2 = 0; src[c2] != src[n]; c2++)
+	for (c2 = 0; src[c2] != '/0' && c2 < n; c2++)
 	{
 		dest[lenght] = src[c2];
 		lenght++;
