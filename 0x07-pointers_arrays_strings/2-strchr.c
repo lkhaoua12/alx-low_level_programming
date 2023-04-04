@@ -2,7 +2,6 @@
 
 /**
  * _strchr - locates a character in a string
- * 
  * @s: string parameter.
  * @c: first concurence in s.
  * Return: s.
