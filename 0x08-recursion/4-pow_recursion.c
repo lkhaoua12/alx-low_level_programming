@@ -2,7 +2,7 @@
 /**
  * _pow_recursion - return x to the power of y.
  *
- * @n: number
+ * @x: number
  * @y: power
  * Return: x.
  */
@@ -13,12 +13,16 @@ int _pow_recursion(int x, int y)
 	{
 		return (-1);
 	}
+	else if (y == 0)
+	{
+		return (1);
+	}
 	if (y == 1)
 	{
-		return x;
+		return (x);
 	}
 	else
 	{
-		return x *= _pow_recursion(x , y - 1);
+		return (x * _pow_recursion(x, y - 1));
 	}
 }
