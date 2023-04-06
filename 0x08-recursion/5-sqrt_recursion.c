@@ -13,13 +13,13 @@ int square_rot(int a, int checker)
 	{
 		return (checker);
 	}
-	else if (checker <= 1)
+	else if (checker >= a / 2)
 	{
 		return (-1);
 	}
 	else
 	{
-		return (square_rot(a, checker - 1));
+		return (square_rot(a, checker + 1));
 	}
 }
 
@@ -31,6 +31,6 @@ int square_rot(int a, int checker)
 
 int _sqrt_recursion(int n)
 {
-	return (square_rot(n, n));
+	return (square_rot(n, 1));
 }
 
