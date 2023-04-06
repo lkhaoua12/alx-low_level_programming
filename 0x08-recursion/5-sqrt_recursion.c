@@ -24,9 +24,8 @@ int square_rot(int a, int checker)
 }
 
 /**
- * square_rot - check square
- * @a: int num
- * @checker: int num to decremnt
+ * _sqrt_recursion - check square
+ * @n: int num
  * Return: int
  */
 
