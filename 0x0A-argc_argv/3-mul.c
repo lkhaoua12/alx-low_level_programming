@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * main - Main entry point
  * @argc: argument count.
@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		sum = ((int) *(argv[1]) - '0') * ((int) *(argv[2]) - '0');
+		sum = atoi(argv[1]) * atoi(argv[2]);
 		printf("%d\n", sum);
 	}
 	return (0);
