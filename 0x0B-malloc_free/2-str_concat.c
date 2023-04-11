@@ -29,7 +29,18 @@ char *str_concat(char *s1, char *s2)
 {
 	int i;
 	char *p = (char *)malloc(get_lenght(s1) + get_lenght(s2) + 1);
-
+	if (s1 == NULL && s2 == NULL)
+	{
+		return NULL;
+	}
+	else if (s1 == NULL)
+	{
+		return (s2);
+	}
+	else if (s2 == NULL)
+	{
+		return (s1);
+	}
 	for (i = 0; i < get_lenght(s1); i++)
 	{
 		*(p + i) = *(s1 + i);
