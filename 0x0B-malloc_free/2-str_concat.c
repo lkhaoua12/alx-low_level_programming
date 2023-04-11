@@ -31,7 +31,11 @@ char *str_concat(char *s1, char *s2)
 	char *p;
 	if (!s2)
 	{
-		s2 = "";
+		s2 = '\0';
+	}
+	if (!s1)
+	{
+		s1 = '\0';
 	}
 	p = (char *)malloc(get_lenght(s1) + get_lenght(s2) + 1);
 	for (i = 0; i < get_lenght(s1); i++)
