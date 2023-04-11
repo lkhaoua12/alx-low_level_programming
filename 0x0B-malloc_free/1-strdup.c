@@ -32,7 +32,7 @@ char *_strdup(char *str)
 	if (!str)
 	{
 		free (p);
-		return (1);
+		return (p);
 	}
 	for (i = 0; i < get_lenght(str); i++)
 	{
