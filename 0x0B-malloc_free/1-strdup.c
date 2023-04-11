@@ -31,7 +31,8 @@ char *_strdup(char *str)
 
 	if (!str)
 	{
-		return (free (p));
+		free (p);
+		return (1);
 	}
 	for (i = 0; i < get_lenght(str); i++)
 	{
