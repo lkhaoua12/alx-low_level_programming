@@ -28,6 +28,10 @@ char *_strdup(char *str)
 {
 	int i;
 	char *p = (char *)malloc(get_lenght(str) + 1);
+	if (str == NULL)
+	{
+		printf("failed to allocate memory\n");
+	}
 
 	for (i = 0; i < get_lenght(str); i++)
 	{
