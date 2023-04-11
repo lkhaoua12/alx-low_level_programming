@@ -9,9 +9,9 @@
 char *create_array(unsigned int size, char c)
 {
 	char *p = (char *)malloc(size);
-	unsigned int i = 1;
+	unsigned int i = 0;
 
-	while (i <= size)
+	while (i < size)
 	{
 		*(p + i) = c;
 		i++;
