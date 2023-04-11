@@ -27,7 +27,7 @@ int get_lenght(char *str)
 char *_strdup(char *str)
 {
 	int i;
-	char *p = (char *)malloc(get_lenght(str));
+	char *p = (char *)malloc(get_lenght(str) + 1);
 
 	for (i = 0; i < get_lenght(str); i++)
 	{
