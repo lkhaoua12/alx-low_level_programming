@@ -27,9 +27,15 @@ int get_lenght(char *str)
 char *_strdup(char *str)
 {
 	int i;
-	char *p = (char *)malloc(get_lenght(str) + 1);
+	char *p;
 
-	if (p == 0 || str == NULL)
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	p = (char *)malloc(get_lenght(str) + 1);
+
+	if (p == NULL)
 	{
 		return (NULL);
 	}
