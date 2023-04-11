@@ -30,6 +30,10 @@ char *str_concat(char *s1, char *s2)
 	int i;
 	char *p;
 
+	if (!s1 && !s2)
+	{
+		return (NULL);
+	}
 	if (!s2)
 	{
 		s2 = '\0';
@@ -54,6 +58,5 @@ char *str_concat(char *s1, char *s2)
 			*(p + i) = *(s2 + i - get_lenght(s1));
 		}
 	}
-	*(p + i) == '\0';
 	return (p);
 }
