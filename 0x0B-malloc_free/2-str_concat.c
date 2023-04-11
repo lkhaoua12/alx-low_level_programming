@@ -43,13 +43,16 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < get_lenght(s1); i++)
+	for (i = 0; i <= get_lenght(s1) + get_lenght(s2); i++)
 	{
-		*(p + i) = *(s1 + i);
-	}
-	for (i = 0; i < get_lenght(s2) + 1; i++)
-	{
-		*(p + get_lenght(s1) + i) = *(s2 + i);
+		if (i < get_lenght(s1))
+		{
+			*(p + i) = *(s1 + i);
+		}
+		else
+		{
+			*(p + i) = *(s2 + i - get_lenght(s1));
+		}
 	}
 	return (p);
 }
