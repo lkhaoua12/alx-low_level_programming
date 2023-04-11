@@ -28,10 +28,11 @@ char *_strdup(char *str)
 {
 	int i;
 	char *p = (char *)malloc(get_lenght(str) + 1);
-	
-	if (get_lenght(str) <= 1)
+
+	if (!str)
 	{
-		free(p);
+		free (p);
+		return;
 	}
 	for (i = 0; i < get_lenght(str); i++)
 	{
