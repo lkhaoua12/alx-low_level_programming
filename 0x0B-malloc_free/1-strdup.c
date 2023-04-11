@@ -15,7 +15,7 @@ int get_lenght(char *str)
 		lenght++;
 		str++;
 	}
-	return (lenght - 1);
+	return (lenght);
 }
 
 /**
@@ -29,10 +29,6 @@ char *_strdup(char *str)
 	int i;
 	char *p = (char *)malloc(get_lenght(str));
 
-	if (!*str)
-	{
-		printf("failed to allocate memory\n");
-	}
 	for (i = 0; i < get_lenght(str); i++)
 	{
 		*(p + i) = *(str + i);
