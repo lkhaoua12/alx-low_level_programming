@@ -15,7 +15,7 @@ int get_lenght(char *str)
 		lenght++;
 		str++;
 	}
-	return (lenght);
+	return (lenght - 1);
 }
 
 /**
