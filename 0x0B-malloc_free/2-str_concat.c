@@ -28,7 +28,7 @@ int get_lenght(char *str)
 char *str_concat(char *s1, char *s2)
 {
 	int i;
-	char *p = (char *)malloc(get_lenght(s1) + get_lenght(s2));
+	char *p = (char *)malloc(get_lenght(s1) + get_lenght(s2) + 1);
 
 	for (i = 0; i < get_lenght(s1); i++)
 	{
