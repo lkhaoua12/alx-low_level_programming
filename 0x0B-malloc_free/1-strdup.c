@@ -28,8 +28,8 @@ char *_strdup(char *str)
 {
 	int i;
 	char *p = (char *)malloc(get_lenght(str));
-	
-	if (!str)
+
+	if (!*str)
 	{
 		printf("failed to allocate memory\n");
 	}
