@@ -29,6 +29,10 @@ char *_strdup(char *str)
 	int i;
 	char *p = (char *)malloc(get_lenght(str) + 1);
 
+	if (p == 0)
+	{
+		return (0);
+	}
 	for (i = 0; i < get_lenght(str); i++)
 	{
 		*(p + i) = *(str + i);
