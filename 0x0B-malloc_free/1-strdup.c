@@ -29,13 +29,13 @@ char *_strdup(char *str)
 	int i;
 	char *p;
 
-	if (str == NULL)
+	if (!str)
 	{
 		return (NULL);
 	}
 	p = (char *)malloc(get_lenght(str) + 1);
 
-	if (p == NULL)
+	if (!p)
 	{
 		return (NULL);
 	}
