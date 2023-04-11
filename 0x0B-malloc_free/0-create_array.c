@@ -11,6 +11,10 @@ char *create_array(unsigned int size, char c)
 	char *p = (char *)malloc(size);
 	unsigned int i = 0;
 
+	if (size <= 0)
+	{
+		printf("failed to allocate memory\n");
+	}
 	while (i < size)
 	{
 		*(p + i) = c;
