@@ -32,10 +32,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *p;
 
-	if (!nmemb || !size)
+	if (nmemb == 0 || size == 0)
 		return (NULL);
 	p = malloc(nmemb * sizeof(int));
-	if (!p)
+	if (p == 0)
 		return (NULL);
 	setmemory(p, nmemb * sizeof(int), 0);
 	return (p);
