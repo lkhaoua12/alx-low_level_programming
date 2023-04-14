@@ -24,7 +24,6 @@ char *setmemory(char *p, unsigned int s, char a)
  * _calloc - concat two string;
  * @nmemb: size of bytes.
  * @size: size of int.
- * @n: size from s2 to copy
  * Return: pointer.
  */
 
