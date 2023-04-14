@@ -1,6 +1,23 @@
 #include "main.h"
 
 /**
+ *
+ *
+ *
+ */
+
+char *setmemory(char *p, unsigned int s, char a)
+{
+	char *ptr = p;
+	while (s--)
+	{
+		*ptr = a;
+		ptr++;
+	}
+	return (ptr);
+}
+
+/**
  * string_nconcat - concat two string;
  * @s1: first string.
  * @s2: second string.
@@ -10,18 +27,15 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int i;
 	char *p; 
 
 	if (!nmemb || !size)
 		return (NULL);
-	p = malloc(nmemb * size);
+	p = malloc(nmemb * sizeof(int));
 	if (!p)
 		return (NULL);
-	for (i = 0 ;i < nmemb; i++)
-	{
-		*(p + i) = 0;
-	}
-
+	setmemory(p, nmemb * sizeof(int), 0);
 	return (p);
 }
+
+
