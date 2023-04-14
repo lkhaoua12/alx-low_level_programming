@@ -1,14 +1,17 @@
 #include "main.h"
 
 /**
- *
- *
- *
+ * setmemory - set all bytes to 0
+ * @p: pointer to the memory address.
+ * @s: size of bytes.
+ * @a: 0
+ * Return: a void pointer.
  */
 
 char *setmemory(char *p, unsigned int s, char a)
 {
 	char *ptr = p;
+
 	while (s--)
 	{
 		*ptr = a;
@@ -18,16 +21,16 @@ char *setmemory(char *p, unsigned int s, char a)
 }
 
 /**
- * string_nconcat - concat two string;
- * @s1: first string.
- * @s2: second string.
+ * _calloc - concat two string;
+ * @nmemb: size of bytes.
+ * @size: size of int.
  * @n: size from s2 to copy
  * Return: pointer.
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *p; 
+	char *p;
 
 	if (!nmemb || !size)
 		return (NULL);
