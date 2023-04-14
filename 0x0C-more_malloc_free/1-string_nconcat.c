@@ -4,6 +4,7 @@
  * string_nconcat - concat two string;
  * @s1: first string.
  * @s2: second string.
+ * @n: size from s2 to copy
  * Return: pointer.
  */
 
