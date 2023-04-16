@@ -102,7 +102,6 @@ void _otherputs(char *exitt)
 int main(int argc, char **argv)
 {
         long result;
-        (void)argc;
         char *exitt = "Error\n";
  
         if (argc != 3)
