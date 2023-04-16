@@ -48,11 +48,11 @@ int my_isspace(char c) {
  *
  * Return: The long long integer converted from num
  */
-long long _atoi(char *num)
+long _atoi(char *num)
 {
         int chek = 1;
         int i = 0;
-        long long result = 0;
+        long result = 0;
         
         while (my_isspace(num[i]))
                 i++;
@@ -102,7 +102,7 @@ void _otherputs(char *exitt)
 int main(int argc, char **argv)
 {
         (void)argc;
-        long long result;
+        long result;
         char *exitt = "Error\n";
  
         if (argc != 3)
