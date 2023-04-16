@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <unistd.h>
 /**
  * _puts - prints an integer to stdout
  * @num: The integer to print
