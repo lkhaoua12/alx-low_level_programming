@@ -101,8 +101,8 @@ void _otherputs(char *exitt)
  */
 int main(int argc, char **argv)
 {
-        (void)argc;
         long result;
+        (void)argc;
         char *exitt = "Error\n";
  
         if (argc != 3)
