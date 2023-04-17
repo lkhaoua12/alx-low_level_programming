@@ -10,12 +10,12 @@ void _puts(int num)
 {       
         if (num < 10)
         {       
-                _putchar(num + '0');
+                putchar(num + '0');
         }        
         else
         {       
                 _puts(num / 10);
-                _putchar(num % 10 + '0');
+                putchar(num % 10 + '0');
         }
 }
 
@@ -75,7 +75,7 @@ void _otherputs(char *exitt)
  
         for (i = 0; exitt[i]; i++)
         {
-                _putchar(exitt[i]);
+                putchar(exitt[i]);
         }
 }
  
@@ -103,7 +103,7 @@ int main(int argc, char **argv)
         }
         result = (_atoi(argv[1]) * _atoi(argv[2]));
         _puts(result);
-        _putchar('\n');
+        putchar('\n');
         return (0);
 }
 
