@@ -2,13 +2,14 @@
 #define CHEADER_FILE
 
 /**                                                          
- * ABS - Computes the absolute value of a number x.
- * @x: The number to compute the absolute value of.
+ * SUM - Computes the sum of x and y.
+ * @x: First num of sum.
+ * @y: Second num of sum.
  *
- * Return: The absolute value of x.
+ * Return: The sum of x and y.
  */
 
-#define SUM(x, y) ((x) + (x))
+#define SUM(x, y) ((x) + (y))
 
 
 #endif
