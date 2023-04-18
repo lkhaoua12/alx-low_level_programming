@@ -1,5 +1,5 @@
-#ifndef 2HEADER_FILE
-#define 2HEADER_FILE
+#ifndef AHEADER_FILE
+#define AHEADER_FILE
 
 /**
  * ABS - Computes the absolute value of a number x.
