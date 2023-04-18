@@ -8,7 +8,7 @@
  * Return: The absolute value of x.
  */
 
-#define SUM(x, y) ((x) * (x))
+#define SUM(x, y) ((x) + (x))
 
 
 #endif
