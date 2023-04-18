@@ -1,5 +1,5 @@
-#ifndef AHEADER_FILE
-#define AHEADER_FILE
+#ifndef CHEADER_FILE
+#define CHEADER_FILE
 
 /**                                                          
  * ABS - Computes the absolute value of a number x.
@@ -8,7 +8,7 @@
  * Return: The absolute value of x.
  */
 
-#define SUM(x, y) ((x) * (y))
+#define SUM(x, y) ((x) * (x))
 
 
 #endif
