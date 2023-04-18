@@ -15,7 +15,7 @@ int strl(char *str)
 	{
 		lenght++;
 	}
-	return(lenght);
+	return (lenght);
 }
 /**
  * strcp - Copies a string to a destination buffer.
@@ -34,7 +34,7 @@ char *strcp(char *dest, char *src)
 		*(dest + i) = *(src + i);
 	}
 	*(dest + i) = '\0';
-	return dest;
+	return (dest);
 }
 /**
  * new_dog - Creates a new dog_t struct.
