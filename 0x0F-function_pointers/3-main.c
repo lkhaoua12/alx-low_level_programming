@@ -9,7 +9,7 @@
 int main(int argc, char **argv)
 {
 	int result;
-	int (*hallo)(int, int);
+	int (*right_func)(int, int);
 
 	if (argc != 4)
 	{
