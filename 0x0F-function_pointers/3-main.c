@@ -1,6 +1,11 @@
 #include "3-calc.h"
-
-
+/**
+ * main - Entry point for the program
+ * @argc: The number of arguments passed to the program
+ * @argv: An array of pointers to the arguments passed to the program
+ *
+ * Return: 0 on success
+ */
 int main (int argc, char **argv)
 {
 	int result;
