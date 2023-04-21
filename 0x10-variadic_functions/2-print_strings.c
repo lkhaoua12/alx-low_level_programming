@@ -16,7 +16,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
         {       
                 printf("%s%s", (stri = va_arg(p, char *)) ? stri : "(nil)", separator ? separator : "");
         }
-        printf("%d\n", va_arg(p, int));
+        printf("%s\n", (stri = va_arg(p, char *)) ? stri : "(nil)");
         va_end(p);   
 }
 
