@@ -12,6 +12,10 @@ list_t *add_node(list_t **head, const char *str)
 	size_t i = 0;
 	list_t *temp;
 
+	if (!head || !str)
+	{
+		return (NULL);
+	}
 	buffer = malloc(strlen(str) + 1);
 
 	if (!buffer)
