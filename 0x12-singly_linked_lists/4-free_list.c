@@ -1,5 +1,6 @@
 #include "lists.h"
 /**
+ * free_list - free members of list
  * @head: pointer to list_t.
  *
  * Return: Nothing.
