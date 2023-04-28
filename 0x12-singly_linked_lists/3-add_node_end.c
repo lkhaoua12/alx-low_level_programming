@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_node - adds a new node at the beginning of a list_t list
+ * add_node_end - adds a new node at the beginning of a list_t list
  * @head: pointer to a pointer to the head of the list
  * @str: pointer to the string to be added to the new node
  *
@@ -27,7 +27,6 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		*head = new_node;
 	}
-	
 	else
 	{
 		current = *head;
