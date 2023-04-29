@@ -13,6 +13,5 @@ main:
 
     ; exit the program
     mov eax, 60         ; system call for exit
-    xor edi, edi        ; exit status 0
+    mov edi, 0        ; exit status 0
     syscall             ; invoke system call to exit
-
