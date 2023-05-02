@@ -5,7 +5,7 @@
  * @index: Index of the node to return
  *
  * Return: Pointer to the nth node of the linked list, or NULL if the node does
- *         not exist.
+ *		not exist.
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
@@ -18,5 +18,5 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		i++;
 	}
 
-        return tmp;
+	return (tmp);
 }
