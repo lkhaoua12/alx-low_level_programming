@@ -1,9 +1,12 @@
 #include "main.h"
-
+/**
+ * get_endianness - check if cpu is liitle or big endian
+ * Return: 0 if liitle indian 1 otherwise
+ */
 
 int get_endianness(void)
 {
-	long unsigned i = 1;
+	unsigned long int i = 1;
 	char *p;
 
 	p = (char *)&i;
