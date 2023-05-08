@@ -6,33 +6,48 @@
  *
  * Return: number of bytes read and printed, or 0 on failure
  */
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	char buffer[1024];
-	ssize_t readed;
-	ssize_t written;
-	int file_descriptor = open(filename, O_RDONLY);
+	ssize_t bytes_written; 
+	size_t bytes_read;
+	size_t fp;
+	char *buffer;
 
-	if (file_descriptor == -1)
-		return (0);
-	if (!filename)
-		return (0);
+	if (filename == NULL)
+		return 0;
 
-	readed = read(file_descriptor, buffer, letters);
-	if (readed == -1)
+	fp = open(filename, O_RDONLY);
+
+	if (fp == -1)
+		return 0;
+
+	buffer = malloc(sizeof(char) * (letters + 1));
+
+	if (buffer == NULL)
 	{
-		close(file_descriptor);
-		return (0);
+		return 0;
 	}
 
-	written = write(STDOUT_FILENO, buffer, readed);
-	if (written == -1)
+	bytes_read = read(fp, buffer, letters);
+	if (bytes_read == -1)
 	{
-		close(file_descriptor);
-		return (0);
+		free(buffer);
+		return 0;
 	}
 
-	if (written != readed)
-		return (0);
-	return (readed);
+	bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
+
+	if (bytes_written == -1 || (size_t) bytes_written != bytes_read)
+	{
+		free(buffer);
+		return 0;
+	}
+
+	free(buffer);
+	return (bytes_written);
 }
+
