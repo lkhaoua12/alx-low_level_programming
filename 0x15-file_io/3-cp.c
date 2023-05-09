@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	wd = open(argv[2], O_RDONLY | O_WRONLY | O_CREAT O_TRUNC, FILE_PERMISSIONS);
+	wd = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, FILE_PERMISSIONS);
 	do {
 		bytes_read = read(fd, buffer, BUFFER_SIZE);
 		if (bytes_read == -1)
