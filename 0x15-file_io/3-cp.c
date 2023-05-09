@@ -42,10 +42,5 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", (fd == -1) ? fd : wd);
 		exit(100);
 	}
-	/* if (close(wd) == -1) */
-	/* { */
-		/* dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", wd); */
-		/* exit(100); */
-	/* } */
 	return (0);
 }
