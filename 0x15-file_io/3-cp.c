@@ -9,8 +9,7 @@ int main(int argc, char **argv)
 {
 	ssize_t bytes_read, bytes_written;
 	char buffer[BUFFER_SIZE];
-	int fd;
-	int wd;
+	int fd, wd;
 
 	if (argc != 3)
 	{
@@ -38,16 +37,15 @@ int main(int argc, char **argv)
 			exit(99);
 		}
 	} while (bytes_read > 0);
-
-	if (close(fd) == -1)
+	if (close(fd) == -1 || close(wd) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", (fd == -1) ? fd : wd);
 		exit(100);
 	}
-	if (close(wd) == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", wd);
-		exit(100);
-	}
+	/* if (close(wd) == -1) */
+	/* { */
+		/* dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", wd); */
+		/* exit(100); */
+	/* } */
 	return (0);
 }
