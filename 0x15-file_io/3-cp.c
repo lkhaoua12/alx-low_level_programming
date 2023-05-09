@@ -38,7 +38,7 @@ int main(int argc, char **argv)
 			exit(99);
 		}
 	} while (bytes_read > 0);
-	
+
 	if (close(fd) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", fd);
