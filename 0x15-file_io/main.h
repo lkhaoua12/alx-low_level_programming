@@ -7,6 +7,8 @@
 #include <string.h>
 #include "main.h"
 #include <sys/stat.h>
+#define BUFFER_SIZE 1024
+#define FILE_PERMISSIONS 0664
 
 int _strlen(char *s);
 ssize_t read_textfile(const char *filename, size_t letters);

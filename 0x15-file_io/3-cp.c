@@ -1,9 +1,14 @@
 #include "main.h"
-
+/**
+ * main - entry point
+ * @argc: nubmber of argument
+ * @argv: array of pointer to argument
+ * Return: 0 on succes.
+ */
 int main(int argc, char **argv)
 {
 	ssize_t bytes_read, bytes_written;
-	char buffer[1024];
+	char buffer[BUFFER_SIZE];
 	int fd;
 	int wd;
 
@@ -18,20 +23,27 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	wd = open(argv[2], O_RDONLY | O_WRONLY | O_CREAT, 0664);
+	wd = open(argv[2], O_RDONLY | O_WRONLY | O_CREAT, FILE_PERMISSIONS);
 	if (wd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(100);
 	}
-	
-	bytes_read = read(fd, buffer, 1024);
-	bytes_written = write(wd, buffer, bytes_read);
-	if (bytes_written == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-		exit(100);
-	}
+	do {
+		bytes_read = read(fd, buffer, BUFFER_SIZE);
+		if (bytes_read == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+			exit(98);
+		}
+		bytes_written = write(wd, buffer, bytes_read);
+		if (bytes_written == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			exit(100);
+		}
+	} while (bytes_read > 0);
+
 
 	return (0);
 }
