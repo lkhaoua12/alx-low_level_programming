@@ -1,9 +1,14 @@
 #include "lists.h"
-
+/**
+ * delete_dnodeint_at_index - delete a node at a specific idx.
+ * @head: the first node in the list.
+ * @index: index of the node to delete.
+ * Return: 1 if succed, -1 if fails.
+ */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *temp = *head;
-	unsigned i;
+	unsigned int i;
 
 	if (head == NULL)
 	{
@@ -17,7 +22,6 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	{
 		return (-1);
 	}
-	
 	if (temp == *head)
 	{
 		*head = (*head)->next;
