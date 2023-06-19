@@ -1,1 +1,1 @@
-this is readme file for the low-lovel programing repo
+this is readme file for the low-lovel programing project
