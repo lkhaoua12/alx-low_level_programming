@@ -11,7 +11,7 @@ $(NAME): $(OBJ)
 	$(CC) $(CFLAG) -o $@ $^
 
 %.c: %.o
-	$(cc) $(CFLAG) -c -o $@ $^
+	$(CC) $(CFLAG) -c -o $@ $^
 
 clean:
 	$(RM) -rf $(NAME) *~
