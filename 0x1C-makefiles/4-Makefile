@@ -3,15 +3,15 @@ SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
 RM = rm
-CFLAG = -Wall -Werror -Wextra -pedantic
+CFLAGS = -Wall -Werror -Wextra -pedantic
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(CFLAG) -o $@ $^
+	$(CC) $(CFLAGS) -o $@ $^
 
 %.c: %.o
-	$(CC) $(CFLAG) -c -o $@ $^
+	$(CC) $(CFLAGS) -c -o $@ $^
 
 clean:
 	$(RM) -rf $(NAME) *~
