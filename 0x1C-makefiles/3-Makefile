@@ -13,7 +13,7 @@ $(NAME): $(OBJ)
 	$(cc) -c -o $@ $^
 
 clean:
-	$(RM) $(NAME) *~
+	$(RM) -rf $(NAME) *~
 
 oclean:
 	$(RM) -rf $(OBJ)
