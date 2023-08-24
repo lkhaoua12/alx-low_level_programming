@@ -12,9 +12,9 @@ def island_perimeter(grid):
         for j in range(column):
             if grid[i][j] == 1:
                 delimiter += 4
-            if i > 0 and grid[i-1][j] == 1:
-                delimiter -= 2
-            if j > 0 and grid[i][j - 1] == 1:
-                delimiter -= 2
+                if i > 0 and grid[i-1][j] == 1:
+                    delimiter -= 2
+                if j > 0 and grid[i][j - 1] == 1:
+                    delimiter -= 2
 
     return delimiter
