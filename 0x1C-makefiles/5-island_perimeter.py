@@ -6,7 +6,7 @@ def island_perimeter(grid):
     """find insland in a given grid"""
 
     rows = len(grid)
-    column= len(grid[0])
+    column = len(grid[0])
     delimiter = 0
 
     for i in range(rows):
