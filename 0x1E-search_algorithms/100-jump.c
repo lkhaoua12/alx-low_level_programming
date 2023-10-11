@@ -2,7 +2,7 @@
 #include <math.h>
 
 /**
- * jump_search - Searches for a value in a sorted array using Jump search algorithm.
+ * jump_search - Searches for a value in a sorted array.
  *
  * @array: A pointer to the first element of the array.
  * @size: The number of elements in the array.
@@ -12,38 +12,28 @@
  */
 int jump_search(int *array, size_t size, int value)
 {
-	int step = sqrt(size);
-	int prev = 0;
-	int curr;
+	int m = sqrt(size);
+	int prev = 0, step = m;
 
-	if (array == NULL || size == 0)
+	if (array == NULL || (int)size == 0)
 		return (-1);
-
-	while (array[(step < (int)size ? step : (int)size) - 1] < value)
+	while (step < (int)size - 1 && array[step] <= value)
 	{
 		printf("Value checked array[%d] = [%d]\n", prev, array[prev]);
 		prev = step;
-		step += sqrt(size);
-		if (prev >= (int)size)
-			return (-1);
+		step += m;
 	}
 
-	curr = prev;
-	while (array[curr] < value)
-	{
-		printf("Value checked array[%d] = [%d]\n", curr, array[curr]);
-		prev = curr;
-		curr += 1;
-		if (curr == (step < (int)size ? step : (int)size))
-			break;
-	}
+	printf("Value found between indexes [%d] and [%d]\n", prev, step);
 
-	printf("Value found between indexes [%d] and [%d]\n", prev, curr);
-
-	if (array[prev] == value)
+	while (prev <= (int)size - 1)
 	{
-		printf("Value found between indexes [%d] and [%d]\n", prev, curr);
-		return (prev);
+		printf("Value checked array[%d] = [%d]\n", prev, array[prev]);
+		if (array[prev] == value)
+		{
+			return (prev);
+		}
+		prev++;
 	}
 	return (-1);
 }
